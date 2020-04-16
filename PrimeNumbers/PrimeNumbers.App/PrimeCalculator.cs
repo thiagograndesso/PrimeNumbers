@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -7,6 +8,8 @@ namespace PrimeNumbers.App
     {
         public IEnumerable<int> FindPrimes(int maxNaturalNumber)
         {
+            Console.WriteLine("Finding all primes...");
+            
             if (maxNaturalNumber < PrimeConstants.FirstPrime)
             {
                 return Enumerable.Empty<int>();
