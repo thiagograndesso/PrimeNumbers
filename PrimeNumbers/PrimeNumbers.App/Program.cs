@@ -9,8 +9,8 @@ namespace PrimeNumbers.App
         static void Main(string[] args)
         {
             PrintHeaderTitle();
-            var inputFromConsole = ReadInputFromConsole();
-            var maxNumber = ParseToNumber(inputFromConsole);
+            var inputString = ReadInput();
+            var maxNumber = ParseToNumber(inputString);
 
             var calculator = new PrimeCalculator();
             var primes = calculator.FindPrimes(maxNumber).ToList();
@@ -30,7 +30,7 @@ namespace PrimeNumbers.App
             Console.WriteLine($"Could not find any primes");
         }
 
-        private static string ReadInputFromConsole()
+        private static string ReadInput()
         {
             Console.Write("Max number: ");
             return Console.ReadLine();
