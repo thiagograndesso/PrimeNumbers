@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PrimeNumbers.Console
+namespace PrimeNumbers.App
 {
     public class PrimeCalculator
     {

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbers.Console", "PrimeNumbers.Console\PrimeNumbers.Console.csproj", "{126F513E-2365-491A-BACA-C19ED7AA9561}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbers.App", "PrimeNumbers.App\PrimeNumbers.App.csproj", "{126F513E-2365-491A-BACA-C19ED7AA9561}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbers.Tests", "PrimeNumbers.Tests\PrimeNumbers.Tests.csproj", "{CFBD6644-31CA-4F80-A635-C6AE8AE97EA1}"
 EndProject

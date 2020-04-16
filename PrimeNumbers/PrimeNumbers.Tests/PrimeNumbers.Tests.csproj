@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\PrimeNumbers.Console\PrimeNumbers.Console.csproj" />
+      <ProjectReference Include="..\PrimeNumbers.App\PrimeNumbers.App.csproj" />
     </ItemGroup>
 
 </Project>
