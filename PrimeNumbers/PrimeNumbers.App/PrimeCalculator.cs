@@ -16,8 +16,8 @@ namespace PrimeNumbers.App
             }
 
             var enumerableCount = maxNaturalNumber - PrimeConstants.FirstPrime;
-            var naturalNumbers = Enumerable.Range(PrimeConstants.FirstPrime, enumerableCount);
-            var primes = naturalNumbers.Where(naturalNumber => naturalNumber.IsPrime());
+            var candidatePrimes = Enumerable.Range(PrimeConstants.FirstPrime, enumerableCount);
+            var primes = candidatePrimes.Where(naturalNumber => naturalNumber.IsPrime());
             return primes;
         }
     }

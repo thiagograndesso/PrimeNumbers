@@ -12,8 +12,8 @@ namespace PrimeNumbers.App
             }
 
             var enumerableCount = naturalNumber - PrimeConstants.FirstPrime;
-            var investigatedNumbers = Enumerable.Range(PrimeConstants.FirstPrime, enumerableCount);
-            return investigatedNumbers.All(investigatedNumber => naturalNumber % investigatedNumber != 0);
+            var candidateFactors = Enumerable.Range(PrimeConstants.FirstPrime, enumerableCount);
+            return candidateFactors.All(candidateFactor => naturalNumber % candidateFactor != 0);
         }
     }
 }
