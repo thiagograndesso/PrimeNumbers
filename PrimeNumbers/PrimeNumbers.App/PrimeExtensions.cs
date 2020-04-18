@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 
 namespace PrimeNumbers.App
@@ -6,14 +7,16 @@ namespace PrimeNumbers.App
     {
         public static bool IsPrime(this int naturalNumber)
         {
-            if (naturalNumber < PrimeConstants.FirstPrime)
+            var primeFactors = new List<int>();
+            for (int candidateFactor = 2; naturalNumber > 1; candidateFactor++)
             {
-                return false;
+                while (naturalNumber % candidateFactor == 0)
+                {
+                    primeFactors.Add(candidateFactor);
+                    naturalNumber /= candidateFactor;
+                }
             }
-
-            var enumerableCount = naturalNumber - PrimeConstants.FirstPrime;
-            var investigatedNumbers = Enumerable.Range(PrimeConstants.FirstPrime, enumerableCount);
-            return investigatedNumbers.All(investigatedNumber => naturalNumber % investigatedNumber != 0);
+            return primeFactors.Count() == 1;
         }
     }
 }
